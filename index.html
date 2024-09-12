@@ -3,50 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kenneth   
- Ayegba - Portfolio</title>
+  <title>Kenneth Ayegba - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0; 
-      background-color: #f5f5f5; 
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #333;
     }
 
     header {
-      background-color: #333;
-      color: #fff; 
+      background-color: #4CAF50;
+      color: #fff;
       padding: 20px 0;
       text-align: center;
     }
 
     h1 {
-      font-size: 2em;
+      font-size: 2.5em;
       margin: 0;
     }
 
     section {
-      padding: 20px; 
-      max-width: 800px; 
-      margin: 0 auto; 
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
     }
 
-    ol {
+    ol, ul {
       list-style: none;
       padding: 0;
-      margin: 0;
     }
 
     li {
       margin-bottom: 10px;
     }
 
-    .skills h2, .about h2 {
-      color: #333; 
-      margin-bottom: 10px;
+    .skills h2, .about h2, .interests h2 {
+      color: #333;
+      margin-bottom: 15px;
     }
 
-    .skills li, .about p {
-      line-height: 1.5;
+    .skills li, .about p, .interests p {
+      line-height: 1.6;
     }
 
     img {
@@ -57,15 +57,35 @@
     }
 
     a {
-      color: #333; 
+      color: #4CAF50;
       text-decoration: none;
-      padding: 5px 10px; 
-      border: 1px solid #333;
-      border-radius: 3px;
+      padding: 10px 15px;
+      border: 1px solid #4CAF50;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
     }
 
     a:hover {
-      background-color: #eee;
+      background-color: #4CAF50;
+      color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #333;
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      a {
+        display: block;
+        margin-top: 10px;
+      }
     }
   </style>
 </head>
@@ -75,7 +95,7 @@
   </header>
 
   <section class="skills">
-    <h2>Skills</h2>
+    <h2>Programming Language Skills</h2>
     <ol>
       <li>Hypertext Markup Language (HTML)</li>
       <li>Cascading Style Sheets (CSS)</li>
@@ -93,9 +113,24 @@
     <p>A graduate of B.Sc. in Industrial Physics in 2015, with research experience in improving stepper motor precision using microcontrollers. Completed NYSC in 2016 as a subject teacher. Subsequently, held contract positions as an assistant examiner for the West African Examination Council, and a classroom teacher under the N-Power program. Currently, I am actively learning and enhancing my programming skills through software development training and bootcamps (ALX, Base University Ideas Program, PLP) to gain strong programming skills and problem-solving abilities to contribute to the success of tech organizations as a backend software engineer.</p>
   </section>
 
-  <br>
+  <section class="interests">
+    <h2>Interests</h2>
+    <ul>
+      <li>Web Development</li>
+      <li>Mobile Application</li>
+      <li>UX Research</li>
+    </ul>
+    <p>I am driven and always excited about the latest trends in the tech world and I am striving to contribute my own quota in the tech ecosystem.</p>
+  </section>
 
-  <a href="./Ayegba Kenneth Software engineering.pdf" alt="Applicant CV">Download CV</a>
+  <div style="text-align: center; margin-bottom: 20px;">
+    <a href="./Ayegba Kenneth Software engineering.pdf" alt="Applicant CV">Download CV</a>
+    <a href="https://github.com/ayegbakenneth" target="_blank">Project Links</a>
+  </div>
+
+  <footer>
+    <p>Contact Me at: ayegbakenneth@gmail.com / +2347063707731</p>
+  </footer>
 
 </body>
 </html>
