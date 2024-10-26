@@ -7,19 +7,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family:'Times New Roman', Times, serif;
+      font-family: 'Times New Roman', Times, serif;
       margin: 0;
-      background-color: grey;
+      background-color: #333;
       color: white;
     }
 
-    header {
-    
+    header, footer {
+      background-color: #444;
       color: yellow;
       padding: 20px 0;
       text-align: center;
     }
-
+    .badge img:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s;
+    }
     h1 {
       font-size: 2.5em;
       margin: 0;
@@ -29,6 +32,10 @@
       padding: 20px;
       max-width: 900px;
       margin: 0 auto;
+      text-align: center;
+      background: linear-gradient(135deg, #444, #555);
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
 
     ol, ul {
@@ -39,7 +46,7 @@
     li {
       margin-bottom: 10px;
     }
-
+    
     .skills h2, .about h2, .interests h2 {
       color: yellow;
       margin-bottom: 15px;
@@ -48,21 +55,24 @@
     .skills li, .about p, .interests p {
       line-height: 1.5;
     }
-
-    img {
+    .about img {
       border-radius: 50px;
-      max-width: 200px;
-      margin-bottom: 20px;
+      max-width: 150px;
+      margin: 20px auto;
       display: block;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
+    
+    
 
     a {
-      color: #4CAF50;
-      text-decoration: none;
-      padding: 10px 15px;
-      border: 1px solid #4CAF50;
-      border-radius: 5px;
-      transition: background-color 0.3s, color 0.3s;
+  color: #4CAF50;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 1px solid #4CAF50;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 5px;
     }
 
     a:hover {
@@ -74,11 +84,12 @@
       text-align: center;
       padding: 20px 0;
       color: palegreen;
-    }
+   }
 
     .badge-container {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 10px;
     }
 
@@ -109,9 +120,7 @@
   </header>
 
   <section class="skills">
-    <h2>🔧 Skills & Expertise</h2>
-    <br>
-    <br>
+    <h2>🔧Programming Skills</h2>
     <div class="badge-container">
       <div class="badge">
         <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
